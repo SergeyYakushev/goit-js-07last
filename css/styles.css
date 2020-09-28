@@ -1,0 +1,24 @@
+.imgbox {
+  display: flex;
+  justify-content: center;
+
+  padding: 10px;
+  margin: 1px;
+}
+
+.img {
+  width: 600px;
+  height: 300px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
