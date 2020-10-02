@@ -13,7 +13,7 @@
 Количество элементов: 4
 */
 
-const itemEl = document.querySelectorAll('.item');
+/*const itemEl = document.querySelectorAll('.item');
 const quantityOfCategories = itemEl.length;
 
 console.log(`'В списке ${quantityOfCategories} категории.`);
@@ -24,4 +24,19 @@ titleEl.forEach(e => console.log(e.textContent));
 
 const listEl = document.querySelectorAll('ul>li');
 
-listEl.forEach(e => console.log(e.textContent));
+listEl.forEach(e => console.log(e.textContent));*/
+
+const itemEl = document.querySelectorAll('.item');
+console.log('itemEl', itemEl);
+const quantityCategories = itemEl.length;
+
+console.log(`В списке ${quantityCategories} категории.`);
+
+const listItemCategories = itemEl.forEach(element => {
+  const titleCategories = element.firstElementChild.textContent;
+  const quantityInCategory = element.lastElementChild.querySelectorAll('li')
+    .length;
+
+  console.log(`Категория: ${titleCategories}`);
+  console.log(`Количество элементов: ${quantityInCategory}\n\n`);
+});
